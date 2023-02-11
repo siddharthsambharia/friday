@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Circula-Std-Bold";
+  src: url("../public/fonts/Circular-Std-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Circula-Std-Book";
+  src: url("../public/fonts/Circular-Std-Book.ttf");
+}
+
+@font-face {
+  font-family: "Circula-Std-Medium";
+  src: url("../public/fonts/Circular-Std-Medium.ttf");
+}
