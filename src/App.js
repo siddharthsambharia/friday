@@ -68,11 +68,10 @@ function App() {
             inbox.
           </div>
           <div className="b24">
-            <button
-              className="btn2"
-              onclick="window.location.href='www.google.com"
-            >
-              <a href="">Download</a>
+            <button className="btn2">
+              <a href="https://drive.google.com/drive/folders/1TNTMdsAgAUffJnScOqhF270_P9NpEyGc?usp=sharing">
+                Download
+              </a>
             </button>
           </div>
           <div className="b23">

@@ -191,7 +191,8 @@ margin-bottom: 1REM;
 text-align: center;
 display: flex;
 justify-content: center;
-font-family: "Circula-Std-Medium"
+font-family: "Circula-Std-Medium";
+margin-bottom: 1rem;
 }
 
 
