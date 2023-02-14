@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.723e3fce.css",
-    "main.js": "/static/js/main.dd871ca8.js",
+    "main.css": "/static/css/main.e5c075c2.css",
+    "main.js": "/static/js/main.c765c161.js",
     "static/js/787.42f9476f.chunk.js": "/static/js/787.42f9476f.chunk.js",
     "static/media/slack1.png": "/static/media/slack1.970eeb1fd36a96a370bf.png",
     "static/media/gmail3.png": "/static/media/gmail3.a2af21fd43148835af1e.png",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1b4da6582f83f45ea039.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
     "static/media/Circular-Std-Medium.ttf": "/static/media/Circular-Std-Medium.3fcb6535e39024a69e30.ttf",
     "static/media/Circular-Std-Bold.ttf": "/static/media/Circular-Std-Bold.70b1780ab02d1d1ac189.ttf",
     "static/media/Circular-Std-Book.ttf": "/static/media/Circular-Std-Book.ce1731670f4779d9c951.ttf",
     "index.html": "/index.html",
-    "main.723e3fce.css.map": "/static/css/main.723e3fce.css.map",
-    "main.dd871ca8.js.map": "/static/js/main.dd871ca8.js.map",
+    "main.e5c075c2.css.map": "/static/css/main.e5c075c2.css.map",
+    "main.c765c161.js.map": "/static/js/main.c765c161.js.map",
     "787.42f9476f.chunk.js.map": "/static/js/787.42f9476f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.723e3fce.css",
-    "static/js/main.dd871ca8.js"
+    "static/css/main.e5c075c2.css",
+    "static/js/main.c765c161.js"
   ]
 }
