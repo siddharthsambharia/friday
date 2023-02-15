@@ -146,13 +146,13 @@ a:active {
   background-color: transparent;
   display: flex;
   justify-content: start;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 42px;
 
   color: white;
   text-shadow: yellow 0px 0px 1px;
   margin-bottom: 1REM;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Bold";
 
 }
 
@@ -359,7 +359,8 @@ font-weight: 600;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+
+    margin-bottom: -2rem;
 
 }
 

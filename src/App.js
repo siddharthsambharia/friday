@@ -27,29 +27,11 @@ function App() {
           </p>
         </h1>
       </div>
-      <div className="email">
-        <form
-          action="https://formspree.io/f/xlekjwlp"
-          method="POST"
-          className="form"
-        >
-          <label className="label">
-            <input
-              className="input"
-              type="email"
-              name="email"
-              placeholder="Your email:"
-            ></input>
-          </label>
-          <button className="btn" type="submit">
-            Sign up
-          </button>
-        </form>
-      </div>
+
       <div className="hero">
         <div className="box1">
           <div className="sec1">
-            <div className="b11">FRIDAY</div>
+            <div className="b11">friday</div>
             <div className="b12">
               Chat-GPT Slackbot: Streamline Your Business Processes and Boost
               Productivity
@@ -62,7 +44,7 @@ function App() {
             </div>
 
             <div className="b14">
-              <a href="https://slack.com/oauth/v2/authorize?client_id=4166115177239.4742632756229&scope=chat:write,im:history,mpim:history,mpim:read,mpim:write,app_mentions:read,commands,im:read,im:write,channels:history,incoming-webhook&user_scope=">
+              <a href="https://fridayv2-production.up.railway.app/slack/install">
                 <img
                   alt="Add to Slack"
                   height="40"
@@ -71,6 +53,27 @@ function App() {
                   srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
                 />
               </a>
+              <div className="email">
+                <form
+                  action="https://formspree.io/f/xlekjwlp"
+                  method="POST"
+                  className="form"
+                >
+                  <label className="label">
+                    <input
+                      className="input"
+                      type="email"
+                      name="email"
+                      placeholder="Your email:"
+                    ></input>
+                  </label>
+                  <button className="btn" type="submit">
+                    <a href="https://fridayv2-production.up.railway.app/slack/install">
+                      Sign up
+                    </a>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
           <div className="b13">
