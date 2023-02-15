@@ -27,7 +27,25 @@ function App() {
           </p>
         </h1>
       </div>
-
+      <div className="email">
+        <form
+          action="https://formspree.io/f/xlekjwlp"
+          method="POST"
+          className="form"
+        >
+          <label className="label">
+            <input
+              className="input"
+              type="email"
+              name="email"
+              placeholder="Your email:"
+            ></input>
+          </label>
+          <button className="btn" type="submit">
+            Sign up
+          </button>
+        </form>
+      </div>
       <div className="hero">
         <div className="box1">
           <div className="sec1">
@@ -53,27 +71,6 @@ function App() {
                   srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
                 />
               </a>
-              <div className="email">
-                <form
-                  action="https://formspree.io/f/xlekjwlp"
-                  method="POST"
-                  className="form"
-                >
-                  <label className="label">
-                    <input
-                      className="input"
-                      type="email"
-                      name="email"
-                      placeholder="Your email:"
-                    ></input>
-                  </label>
-                  <button className="btn" type="submit">
-                    <a href="https://fridayv2-production.up.railway.app/slack/install">
-                      Sign up
-                    </a>
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
           <div className="b13">
