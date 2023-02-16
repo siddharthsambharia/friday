@@ -1,7 +1,16 @@
 import "./App.css";
 import g1 from "./images/gmail3.png";
 import s1 from "./images/slack1.png";
+
 import { Helmet } from "react-helmet";
+
+function handleSubmit() {
+  const emailInput = document.querySelector('input[name="email"]');
+  const email = emailInput.value;
+  const slackInstallLink = document.getElementById("slack-install-link");
+  slackInstallLink.href += `?email=${email}`;
+  window.location.href = slackInstallLink.href;
+}
 
 function App() {
   return (
@@ -9,7 +18,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Friday|Berry</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
       </Helmet>
 
       <div className="topbar">
@@ -41,7 +50,7 @@ function App() {
               placeholder="Your email:"
             ></input>
           </label>
-          <button className="btn" type="submit">
+          <button className="btn" type="submit" onClick={handleSubmit}>
             Sign up
           </button>
         </form>
