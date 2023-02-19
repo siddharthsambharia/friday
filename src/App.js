@@ -128,7 +128,7 @@ function App() {
               meetings, organizing information, and answering questions.
             </div>
 
-            <div className="b14">
+            {/* <div className="b14">
               <a href="https://fridayv2-production.up.railway.app/slack/install">
                 <img
                   alt="Add to Slack"
@@ -138,7 +138,7 @@ function App() {
                   srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="b13">
             <img className="img" src={s1} alt="" />
