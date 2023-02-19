@@ -1,7 +1,6 @@
 *{
   margin: 0px;
   background-color: #1b1b1b;
-font-family: sans-serif;
 }
 
 
@@ -19,7 +18,7 @@ padding-top: 1rem;
 padding-left: 4rem;
 padding-right: 4rem;
 padding-bottom: 1rem;
-font-weight: 600;
+font-weight: 500;
 font-size: large;
 font-family: "Gilroy-Bold";
 }
@@ -42,12 +41,12 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: rgb(70, 70, 233);
+  color: rgb(76, 76, 108);
 }
 
 /* selected link */
 a:active {
-  color: rgb(70, 70, 233);
+  color: rgb(76, 76, 108);
 }
 
 
@@ -265,13 +264,9 @@ color: black;
 
 
 .btn{
-  background: white;
-  font-weight: 800;
+  background: transparent;
   cursor: pointer;
-background-color: black;
-border-radius: 9999px;
 color: white;
-padding: 0.5rem;
 
 border: none;
 

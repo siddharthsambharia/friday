@@ -1,18 +1,66 @@
 import "./App.css";
 import g1 from "./images/gmail3.png";
 import s1 from "./images/slack1.png";
-
+import axios from "axios";
+import slacklogo from "./images/slacklogo.png";
+// import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { Helmet } from "react-helmet";
 
-function handleSubmit() {
-  const emailInput = document.querySelector('input[name="email"]');
-  const email = emailInput.value;
-  const slackInstallLink = document.getElementById("slack-install-link");
-  slackInstallLink.href += `?email=${email}`;
-  window.location.href = slackInstallLink.href;
-}
+import React, { useState } from "react";
 
 function App() {
+  const [email, setEmail] = useState("");
+
+  function handleSubmit(event) {
+    //     event.preventDefault();
+
+    //     const xhr = new XMLHttpRequest();
+    //     xhr.open("POST", "https://fridayhttp-production.up.railway.app:8000/email");
+
+    //     // Set the Content-Type header to x-www-form-urlencoded
+    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    //     // Create the form data and set the email field
+    //     const formData = new FormData();
+    //     formData.set("email", email);
+    // ``
+    //     // Encode the form data and send the request
+    //     xhr.send(new URLSearchParams(formData).toString());
+
+    event.preventDefault();
+
+    // Set the email data as a JSON object
+    const data = { email: email };
+
+    // Convert the data object to x-www-form-urlencoded format
+    const formData = new URLSearchParams();
+    for (const key in data) {
+      formData.append(key, data[key]);
+    }
+
+    // Make the POST request using axios
+    axios
+      .post("https://fridayhttp-production.up.railway.app/email", formData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        // Redirect the user to the URL
+        // window.location.href = "/my-redirect-url";
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(error.response);
+      });
+
+    // Redirect the user to the URL
+    window.location.href =
+      "https://fridayv2-production.up.railway.app/slack/install";
+  }
+
   return (
     <div className="App">
       <Helmet>
@@ -37,24 +85,34 @@ function App() {
         </h1>
       </div>
       <div className="email">
-        <form
-          action="https://formspree.io/f/xlekjwlp"
-          method="POST"
-          className="form"
-        >
-          <label className="label">
+        {/* <ReactTooltip place="bottom" id="my-tooltip" type="error" /> */}
+
+        <form className="form" onSubmit={handleSubmit}>
+          <label className="label" htmlFor="emailInput">
             <input
               className="input"
-              type="email"
-              name="email"
               placeholder="Your email:"
+              type="email"
+              id="emailInput"
+              name="email"
+              required
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             ></input>
           </label>
-          <button className="btn" type="submit" onClick={handleSubmit}>
-            Sign up
+          <button
+            className="btn"
+            type="submit"
+            onClick={handleSubmit}
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Hello world!"
+            data-for="tool"
+          >
+            <img alt="Add to Slack" height="25" width="25" src={slacklogo} />
           </button>
         </form>
       </div>
+
       <div className="hero">
         <div className="box1">
           <div className="sec1">
