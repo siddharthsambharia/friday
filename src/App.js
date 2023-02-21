@@ -10,62 +10,62 @@ import { Helmet } from "react-helmet";
 import React, { useState } from "react";
 
 function App() {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  function handleSubmit(event) {
-    //     event.preventDefault();
+  // function handleSubmit(event) {
+  //   //     event.preventDefault();
 
-    //     const xhr = new XMLHttpRequest();
-    //     xhr.open("POST", "https://fridayhttp-production.up.railway.app:8000/email");
+  //   //     const xhr = new XMLHttpRequest();
+  //   //     xhr.open("POST", "https://fridayhttp-production.up.railway.app:8000/email");
 
-    //     // Set the Content-Type header to x-www-form-urlencoded
-    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  //   //     // Set the Content-Type header to x-www-form-urlencoded
+  //   //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-    //     // Create the form data and set the email field
-    //     const formData = new FormData();
-    //     formData.set("email", email);
-    // ``
-    //     // Encode the form data and send the request
-    //     xhr.send(new URLSearchParams(formData).toString());
+  //   //     // Create the form data and set the email field
+  //   //     const formData = new FormData();
+  //   //     formData.set("email", email);
+  //   // ``
+  //   //     // Encode the form data and send the request
+  //   //     xhr.send(new URLSearchParams(formData).toString());
 
-    event.preventDefault();
+  //   event.preventDefault();
 
-    // Set the email data as a JSON object
-    const data = { email: email };
+  //   // Set the email data as a JSON object
+  //   const data = { email: email };
 
-    // Convert the data object to x-www-form-urlencoded format
-    const formData = new URLSearchParams();
-    for (const key in data) {
-      formData.append(key, data[key]);
-    }
+  //   // Convert the data object to x-www-form-urlencoded format
+  //   const formData = new URLSearchParams();
+  //   for (const key in data) {
+  //     formData.append(key, data[key]);
+  //   }
 
-    // Make the POST request using axios
-    axios
-      .post("https://fridayhttp-production.up.railway.app/email", formData, {
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-      })
-      .then((response) => {
-        console.log(response.data);
-        // Redirect the user to the URL
-        // window.location.href = "/my-redirect-url";
-      })
-      .catch((error) => {
-        console.log(error);
-        console.log(error.response);
-      });
+  //   // Make the POST request using axios
+  //   axios
+  //     .post("https://fridayhttp-production.up.railway.app/email", formData, {
+  //       headers: {
+  //         "Content-Type": "application/x-www-form-urlencoded",
+  //       },
+  //     })
+  //     .then((response) => {
+  //       console.log(response.data);
+  //       // Redirect the user to the URL
+  //       // window.location.href = "/my-redirect-url";
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       console.log(error.response);
+  //     });
 
-    // Redirect the user to the URL
-    window.location.href =
-      "https://fridayv2-production.up.railway.app/slack/install";
-  }
+  //   // Redirect the user to the URL
+  //   window.location.href =
+  //     "https://fridayv2-production.up.railway.app/slack/install";
+  // }
 
   return (
     <div className="App">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Friday|Berry</title>
+        <title>Friday</title>
         {/* <link rel="canonical" href="http://mysite.com/example" /> */}
       </Helmet>
 
@@ -113,7 +113,7 @@ function App() {
       </div> */}
       <div className="email">
         <div className="b14">
-          <a href="https://fridayv2-production.up.railway.app/slack/install">
+          <a href="https://slack.com/oauth/v2/authorize?client_id=4166115177239.4742632756229&scope=app_mentions:read,channels:history,chat:write,commands,im:history,im:read,im:write,mpim:history,mpim:read,mpim:write,users:read,users:read.email&user_scope=users:read,users:read.email">
             <img
               alt="Add to Slack"
               height="40"
