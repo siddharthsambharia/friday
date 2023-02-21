@@ -92,7 +92,7 @@ a:active {
   margin-right: 8rem;
   color: white;
   flex: 2;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
     border: 2px solid rgb(167, 213, 255);
     box-shadow: rgb(32 148 255) 0px 0px 10px;
     border-radius: 1rem;
@@ -132,7 +132,7 @@ a:active {
   color: white;
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -241,7 +241,7 @@ text-align: center;
 display: flex;
 justify-content: center;
 font-family: "Gilroy-Medium";
-margin-bottom: 1rem;
+margin-bottom: 0.4rem;
 }
 
 

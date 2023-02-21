@@ -84,8 +84,7 @@ function App() {
           </p>
         </h1>
       </div>
-      <div className="email">
-        {/* <ReactTooltip place="bottom" id="my-tooltip" type="error" /> */}
+      {/* <div className="email">
 
         <form className="form" onSubmit={handleSubmit}>
           <label className="label" htmlFor="emailInput">
@@ -111,6 +110,19 @@ function App() {
             <img alt="Add to Slack" height="25" width="25" src={slacklogo} />
           </button>
         </form>
+      </div> */}
+      <div className="email">
+        <div className="b14">
+          <a href="https://fridayv2-production.up.railway.app/slack/install">
+            <img
+              alt="Add to Slack"
+              height="40"
+              width="139"
+              src="https://platform.slack-edge.com/img/add_to_slack.png"
+              srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
+            />
+          </a>
+        </div>
       </div>
 
       <div className="hero">
@@ -127,18 +139,6 @@ function App() {
               AI-powered assistant that can help you with taskslike scheduling
               meetings, organizing information, and answering questions.
             </div>
-
-            {/* <div className="b14">
-              <a href="https://fridayv2-production.up.railway.app/slack/install">
-                <img
-                  alt="Add to Slack"
-                  height="40"
-                  width="139"
-                  src="https://platform.slack-edge.com/img/add_to_slack.png"
-                  srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
-                />
-              </a>
-            </div> */}
           </div>
           <div className="b13">
             <img className="img" src={s1} alt="" />
