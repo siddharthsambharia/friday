@@ -61,6 +61,9 @@ function App() {
   //     "https://fridayv2-production.up.railway.app/slack/install";
   // }
 
+  // const TRACKING_ID = "G-N8ZYGW08G1"; // YOUR_OWN_TRACKING_ID
+  // ReactGA.initialize(TRACKING_ID);
+
   return (
     <div className="App">
       <Helmet>
@@ -113,7 +116,7 @@ function App() {
       </div> */}
       <div className="email">
         <div className="b14">
-          <a href="https://slack.com/oauth/v2/authorize?client_id=4166115177239.4742632756229&scope=app_mentions:read,channels:history,chat:write,commands,im:history,im:read,im:write,mpim:history,mpim:read,mpim:write,users:read,users:read.email&user_scope=users:read,users:read.email">
+          <a href="https://fridayv2-production.up.railway.app/slack/install">
             <img
               alt="Add to Slack"
               height="40"
