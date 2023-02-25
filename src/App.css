@@ -133,7 +133,7 @@ a:active {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  margin-top: 4rem;
+  margin-top: 16rem;
   margin-left: 2rem;
   margin-right: 2rem;
   font-family: "Gilroy-Bold";
@@ -207,6 +207,26 @@ margin-bottom: 2rem;
 
 }
 
+
+
+.privacy{
+  display: flex;
+justify-content: center;
+color: white;
+margin-top: 18rem;
+margin-left: 4rem;
+margin-right: 4rem;
+padding-left: 12rem;
+padding-right: 12rem;
+text-align: center;
+
+}
+
+.h2{
+
+}
+
+
 .b21{
 background-color: transparent;
 display: flex;
@@ -236,12 +256,13 @@ margin-bottom: 1REM;
 
 
 .email{
-  color: white;
+
 text-align: center;
 display: flex;
 justify-content: center;
 font-family: "Gilroy-Medium";
 margin-bottom: 0.4rem;
+margin-top: 2rem;
 }
 
 
@@ -267,8 +288,12 @@ color: black;
   background: transparent;
   cursor: pointer;
 color: white;
-
+font-weight: 800;
+border-color: black;
+background-color: black;
 border: none;
+border-radius: 4rem;
+padding: 0.5rem;
 
 }
 

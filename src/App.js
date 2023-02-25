@@ -10,56 +10,56 @@ import { Helmet } from "react-helmet";
 import React, { useState } from "react";
 
 function App() {
-  // const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
 
-  // function handleSubmit(event) {
-  //   //     event.preventDefault();
+  function handleSubmit(event) {
+    //     event.preventDefault();
 
-  //   //     const xhr = new XMLHttpRequest();
-  //   //     xhr.open("POST", "https://fridayhttp-production.up.railway.app:8000/email");
+    //     const xhr = new XMLHttpRequest();
+    //     xhr.open("POST", "https://fridayhttp-production.up.railway.app:8000/email");
 
-  //   //     // Set the Content-Type header to x-www-form-urlencoded
-  //   //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    //     // Set the Content-Type header to x-www-form-urlencoded
+    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-  //   //     // Create the form data and set the email field
-  //   //     const formData = new FormData();
-  //   //     formData.set("email", email);
-  //   // ``
-  //   //     // Encode the form data and send the request
-  //   //     xhr.send(new URLSearchParams(formData).toString());
+    //     // Create the form data and set the email field
+    //     const formData = new FormData();
+    //     formData.set("email", email);
+    // ``
+    //     // Encode the form data and send the request
+    //     xhr.send(new URLSearchParams(formData).toString());
 
-  //   event.preventDefault();
+    event.preventDefault();
 
-  //   // Set the email data as a JSON object
-  //   const data = { email: email };
+    // Set the email data as a JSON object
+    const data = { email: email };
 
-  //   // Convert the data object to x-www-form-urlencoded format
-  //   const formData = new URLSearchParams();
-  //   for (const key in data) {
-  //     formData.append(key, data[key]);
-  //   }
+    // Convert the data object to x-www-form-urlencoded format
+    const formData = new URLSearchParams();
+    for (const key in data) {
+      formData.append(key, data[key]);
+    }
 
-  //   // Make the POST request using axios
-  //   axios
-  //     .post("https://fridayhttp-production.up.railway.app/email", formData, {
-  //       headers: {
-  //         "Content-Type": "application/x-www-form-urlencoded",
-  //       },
-  //     })
-  //     .then((response) => {
-  //       console.log(response.data);
-  //       // Redirect the user to the URL
-  //       // window.location.href = "/my-redirect-url";
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //       console.log(error.response);
-  //     });
+    // Make the POST request using axios
+    axios
+      .post("https://fridayhttp-production.up.railway.app/email", formData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        // Redirect the user to the URL
+        // window.location.href = "/my-redirect-url";
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(error.response);
+      });
 
-  //   // Redirect the user to the URL
-  //   window.location.href =
-  //     "https://fridayv2-production.up.railway.app/slack/install";
-  // }
+    // Redirect the user to the URL
+    window.location.href =
+      "https://fridayv2-production.up.railway.app/slack/install";
+  }
 
   // const TRACKING_ID = "G-N8ZYGW08G1"; // YOUR_OWN_TRACKING_ID
   // ReactGA.initialize(TRACKING_ID);
@@ -72,23 +72,20 @@ function App() {
         {/* <link rel="canonical" href="http://mysite.com/example" /> */}
       </Helmet>
 
-      <div className="topbar">
+      {/* <div className="topbar">
         <div className="berry">
           <a href="https://useberry.me/">Home</a>
         </div>
         <div>
           <a href="mailto:sam.siddharth10@gmail.com">Contact Us</a>
         </div>
-      </div>
+      </div> */}
       <div className="heading">
         <h1>
-          <p className="hover-underline-animation">
-            Generative AI for your Slack Workspace 🪄
-          </p>
+          <p className="hover-underline-animation">Get Started, It's Free!</p>
         </h1>
       </div>
-      {/* <div className="email">
-
+      <div className="email">
         <form className="form" onSubmit={handleSubmit}>
           <label className="label" htmlFor="emailInput">
             <input
@@ -110,11 +107,18 @@ function App() {
             data-tooltip-content="Hello world!"
             data-for="tool"
           >
-            <img alt="Add to Slack" height="25" width="25" src={slacklogo} />
+            Submit
+            {/* <img alt="Add to Slack" height="25" width="25" src={slacklogo} /> */}
           </button>
         </form>
-      </div> */}
-      <div className="email">
+      </div>
+      <div className="privacy">
+        <h2>
+          We respect your privacy and do not collect any of your data without
+          your explicit consent. Your information is secure .
+        </h2>
+      </div>
+      {/* <div className="email">
         <div className="b14">
           <a href="https://fridayv2-production.up.railway.app/slack/install">
             <img
@@ -126,10 +130,10 @@ function App() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className="hero">
-        <div className="box1">
+        {/* <div className="box1">
           <div className="sec1">
             <div className="b11">friday</div>
             <div className="b12">
@@ -146,7 +150,7 @@ function App() {
           <div className="b13">
             <img className="img" src={s1} alt="" />
           </div>
-        </div>
+        </div> */}
         {/* <div className="box2">
           <div className="b21">Gmail</div>
           <div className="b22">
