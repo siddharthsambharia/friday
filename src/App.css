@@ -395,6 +395,33 @@ font-weight: 600;
 
 }
 
+.privacy {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+
+
+.heading{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Gilroy-Bold";
+
+}
+
+
 .topbar{
   display: none;
 }
